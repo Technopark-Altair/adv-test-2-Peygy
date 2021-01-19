@@ -1,0 +1,14 @@
+<div style="text-align: center;">
+    <h1>Добавить новую машину</h1>
+    <app-add-car (addNewCar)="addingNewCar($event)"></app-add-car>
+</div>
+
+<!-- <div *ngFor="let car of cars">
+    <h1>
+        <a [routerLink]='["car", car.id]'></a>
+    </h1>
+</div> -->
+
+<div *ngFor="let car of cars" class="aside">
+    <app-car [carInput]="car"></app-car>
+</div>

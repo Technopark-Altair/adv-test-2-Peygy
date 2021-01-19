@@ -1,0 +1,26 @@
+<!-- <div *ngIf="car">
+    <div>{{car.brandName}}</div>
+    <div>{{car.modelName}}</div>
+    <div>{{car.priceInRub}}</div>
+</div> -->
+
+<div *ngIf="car">
+    <h1>{{car.brandName}}</h1>
+    <div>
+        {{car.modelName}}
+    </div>
+    <div>
+        {{car.priceInRub}} 
+    </div>
+</div>
+<div *ngIf="carInput">
+    <div *ngIf="check">
+        <h1>{{carInput.brandName}}</h1>
+        <div>
+            Модель: {{carInput.modelName}} 
+        </div>
+        <div>
+            Цена: {{carInput.priceInRub}} RUB
+        </div>
+    </div>
+</div>

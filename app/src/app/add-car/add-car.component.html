@@ -1,0 +1,6 @@
+<form>
+    <input [(ngModel)] = 'car.brandName' name="brandName" placeholder="Марка авто">
+    <input [(ngModel)] = 'car.modelName' name="modelName" placeholder="Модель">
+    <input [(ngModel)] = 'car.priceInRub' name="priceInRub" placeholder="Цена" type="number">
+    <button type="submit" (click)="AddCarInArray()">Добавить</button>
+</form>
